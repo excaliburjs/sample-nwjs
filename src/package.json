@@ -1,0 +1,36 @@
+{
+    "name": "game",
+    "version": "1.0.0",
+    "description": "",
+    "main": "dist/index.html",
+    "targets": {
+        "main": false
+    },
+    "window": {
+      "title": "Excalibur Node Webkit",
+      "icon": "./favicon.png",
+      "toolbar": true,
+      "frame": true,
+      "width": 800,
+      "height": 500,
+      "position": "center",
+      "min_width": 400,
+      "min_height": 200,
+      "max_width": 800,
+      "max_height": 600
+    },
+    "webkit": {
+      "plugin": true
+    },
+    "scripts": {
+        "start": "parcel serve index.html",
+        "build": "parcel build index.html --public-url ./"
+    },
+    "dependencies": {
+      "excalibur": "0.28.1"
+    },
+    "devDependencies": {
+      "typescript": "5.1.6",
+      "parcel": "2.9.3"
+    }
+}
