@@ -3,12 +3,21 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build": "cd src && npm install && npm run build && cd .. && nwbuild --mode=build --glob=false --out-dir=dist src/",
+    "build": "cd src && npm install && npm run build && cd .. && nwbuild --mode=build",
     "start": "lib\\nwjs-v0.78.1-win-x64\\nw.exe src\\"
   },
-  "author": "",
+  "nwbuild": {
+      "mode": "build",
+      "glob": false,
+      "version": "latest",
+      "flavor": "normal",
+      "cacheDir": "./node_modules/nw",
+      "srcDir": "./src",
+      "outDir": "./dist"
+  },
+  "author": "Erik Onarheim",
   "license": "BSD-2-Clause",
   "devDependencies": {
-    "nw-builder": "4.3.7"
+    "nw-builder": "4.13.6"
   }
 }

@@ -9,6 +9,8 @@ At the top level run
 * `npm install`
 * `npm build`
 
+This uses [nw-builder](https://github.com/nwutils/nw-builder) under the hood
+
 This will produce a new `dist/game.exe`
 
 ## Local development
